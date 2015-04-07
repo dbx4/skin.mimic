@@ -32,6 +32,45 @@
 					<texture>listselect_fo.png</texture>
 					<colordiffuse>shadow</colordiffuse>
 				</control>
+                <!-- Show Title of Random Movie Fanart on Movie Tab-->
+                <control type="label">
+                    <left>0</left>
+                    <top>50</top>
+                    <width>1780</width>
+                    <height>40</height>
+                    <label>$INFO[Window(Home).Property(script.grab.fanart.Movie.Title]</label>
+                    <textoffsetx>15</textoffsetx>
+                    <font>font12</font>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>shadow</shadowcolor>
+                    <visible>StringCompare(Container(9000).ListItem.Thumb,1)</visible>
+                </control>
+                <!-- Show Name of Random Artist Fanart on Music Tab -->
+                <control type="label">
+                    <left>0</left>
+                    <top>50</top>
+                    <width>1780</width>
+                    <height>40</height>
+                    <label>$INFO[Window(Home).Property(script.grab.fanart.Music.Artist]</label>
+                    <textoffsetx>15</textoffsetx>
+                    <font>font12</font>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>shadow</shadowcolor>
+                    <visible>StringCompare(Container(9000).ListItem.Thumb,4)</visible>
+                </control>
+                <!-- Show Name of Random TV Show Fanart on TV Tab -->
+                <control type="label">
+                    <left>0</left>
+                    <top>50</top>
+                    <width>1780</width>
+                    <height>40</height>
+                    <label>$INFO[Window(Home).Property(script.grab.fanart.TV.Title]</label>
+                    <textoffsetx>15</textoffsetx>
+                    <font>font12</font>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>shadow</shadowcolor>
+                    <visible>StringCompare(Container(9000).ListItem.Thumb,2)</visible>
+                </control>
 			</control>
 			<control type="image">
 				<top>94</top>
