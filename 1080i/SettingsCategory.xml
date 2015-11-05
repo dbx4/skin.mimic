@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>3</defaultcontrol>
+	<menucontrol>9051</menucontrol>
+	<onload>SetProperty(Window.HasSettings,True,home)</onload>
+	<onload>ClearProperty(MediaMenu,Home)</onload>
+	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+	<onunload condition="!Skin.HasSetting(Enable.HomeTopMenu) + !Skin.HasSetting(Enable.HomeVerticalMenu)">Skin.SetBool(Enable.HomeDefault)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
@@ -11,11 +16,20 @@
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<left>82</left>
-				<top>32</top>
+				<top>0</top>
 				<width>356</width>
 				<height>840</height>
 				<itemgap>0</itemgap>
-				<onleft>9000</onleft>
+				<onleft>SetProperty(MediaMenu,True,home)</onleft>
+				<onleft condition="Window.IsActive(videossettings)">SetFocus(9050,0)</onleft>
+				<onleft condition="Window.IsActive(musicsettings)">SetFocus(9050,1)</onleft>
+				<onleft condition="Window.IsActive(picturessettings)">SetFocus(9050,2)</onleft>
+				<onleft condition="Window.IsActive(pvrsettings)">SetFocus(9050,3)</onleft>
+				<onleft condition="Window.IsActive(weathersettings)">SetFocus(9050,5)</onleft>
+				<onleft condition="Window.IsActive(appearancesettings)">SetFocus(9050,6)</onleft>
+				<onleft condition="Window.IsActive(servicesettings)">SetFocus(9050,8)</onleft>
+				<onleft condition="Window.IsActive(systemsettings)">SetFocus(9050,9)</onleft>
+				<onleft>9050</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>20</ondown>
@@ -23,12 +37,12 @@
 			<control type="textbox" id="6">
 				<description>description area</description>
 				<left>552</left>
-				<top>754</top>
+				<top>742</top>
 				<width>1256</width>
 				<height>140</height>
 				<font>font15_textbox</font>
 				<align>left</align>
-				<textcolor>themecolor</textcolor>
+				<textcolor>$VAR[ColorHighlightVar]</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
@@ -37,7 +51,7 @@
 			<control type="grouplist" id="5">
 				<description>control area</description>
 				<left>522</left>
-				<top>32</top>
+				<top>0</top>
 				<width>1316</width>
 				<height>720</height>
 				<itemgap>0</itemgap>
@@ -60,7 +74,7 @@
 			<control type="button" id="20">
 				<description>Setting level button</description>
 				<left>82</left>
-				<top>752</top>
+				<top>720</top>
 				<height>120</height>
 				<width>356</width>
 				<label>10037</label>
@@ -69,7 +83,7 @@
 				<aligny>top</aligny>
 				<textoffsety>60</textoffsety>
 				<font>font15</font>
-				<textcolor>labelheader</textcolor>
+				<textcolor>$VAR[ColorHighlightVar]</textcolor>
 				<texturenofocus>-</texturenofocus>
 				<onleft>3</onleft>
 				<onright>3</onright>
@@ -80,7 +94,7 @@
 			<control type="button">
 				<description>Setting level button</description>
 				<left>82</left>
-				<top>752</top>
+				<top>720</top>
 				<height>120</height>
 				<width>356</width>
 				<label>$LOCALIZE[31142]</label>
@@ -89,7 +103,7 @@
 				<aligny>top</aligny>
 				<textoffsety>10</textoffsety>
 				<font>font15</font>
-				<disabledcolor>grey</disabledcolor>
+				<disabledcolor>$VAR[ColorTextVar]</disabledcolor>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<enable>no</enable>
@@ -133,7 +147,6 @@
 			<textoffsetx>30</textoffsetx>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
-			<spinposx>10</spinposx>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
@@ -142,6 +155,17 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
+			<textoffsetx>30</textoffsetx>
+		</control>
+		<control type="label" id="14">
+			<description>Default Label</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1136</width>
+			<height>88</height>
+			<font>font15</font>
+			<align>center</align>
+			<textcolor>dialogheader</textcolor>
 			<textoffsetx>30</textoffsetx>
 		</control>
 		<control type="label" id="2">
@@ -155,5 +179,6 @@
 		</control>
 		<include>Topbar</include>
 		<include>Bottombar</include>
+		<include>SettingsMediaMenu</include>
 	</controls>
 </window>

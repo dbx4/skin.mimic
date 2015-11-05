@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>50</defaultcontrol>
+	<menucontrol>9051</menucontrol>
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
@@ -33,8 +34,8 @@
 						<height>90</height>
 						<font>font15_title</font>
 						<align>center</align>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>[B]$INFO[ListItem.ChannelNumber][/B]</label>
 					</control>
 					<control type="label">
@@ -42,8 +43,8 @@
 						<width>236</width>
 						<height>90</height>
 						<font>font15</font>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -52,8 +53,8 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -63,8 +64,8 @@
 						<align>right</align>
 						<font>font15</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Date]</label>
 						<animation effect="slide" start="0" end="-60" time="100" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
@@ -77,9 +78,9 @@
 							<height>30</height>
 							<font>IconSmall</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[ColorTextVar]</textcolor>
 							<align>right</align>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<label></label>
 							<visible>ListItem.HasTimer</visible>
 						</control>
@@ -89,9 +90,9 @@
 							<height>30</height>
 							<font>IconSmall</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[ColorTextVar]</textcolor>
 							<align>right</align>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<label></label>
 							<visible>ListItem.IsRecording</visible>
 						</control>
@@ -102,7 +103,7 @@
 						<width>356</width>
 						<height>90</height>
 						<texture>listselect_fo.png</texture>
-						<colordiffuse>listselect</colordiffuse>
+						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						<visible>Control.HasFocus(50)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -111,7 +112,7 @@
 						<width>1316</width>
 						<height>90</height>
 						<texture>listselect_fo.png</texture>
-						<colordiffuse>listselect</colordiffuse>
+						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						<visible>Control.HasFocus(50)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -121,8 +122,8 @@
 						<height>90</height>
 						<font>font15_title</font>
 						<align>center</align>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>[B]$INFO[ListItem.ChannelNumber][/B]</label>
 					</control>
 					<control type="label">
@@ -130,8 +131,8 @@
 						<width>236</width>
 						<height>90</height>
 						<font>font15</font>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -140,7 +141,7 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>15</textoffsetx>
-						<selectedcolor>selected</selectedcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -150,8 +151,8 @@
 						<align>right</align>
 						<font>font15</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Date]</label>
 						<animation effect="slide" start="0" end="-60" time="100" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
@@ -164,9 +165,9 @@
 							<height>30</height>
 							<font>IconSmall</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[ColorTextVar]</textcolor>
 							<align>right</align>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<label></label>
 							<visible>ListItem.HasTimer</visible>
 						</control>
@@ -176,9 +177,9 @@
 							<height>30</height>
 							<font>IconSmall</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[ColorTextVar]</textcolor>
 							<align>right</align>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<label></label>
 							<visible>ListItem.IsRecording</visible>
 						</control>

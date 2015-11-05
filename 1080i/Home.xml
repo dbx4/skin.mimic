@@ -2,9 +2,12 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=x1|x2|x3|x4|x5|x6|x7|x8|x9|x10|x11|x12|x13|x101|x202|x303|x404|x505|x606)</onload>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onload>
+	<onload condition="!Skin.HasSetting(Enable.HomeTopMenu) + !Skin.HasSetting(Enable.HomeVerticalMenu)">Skin.SetBool(Enable.HomeDefault)</onload>
+	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<controls>
 		<include>CommonBackground</include>
+<<<<<<< HEAD
 		<include condition="!Skin.HasSetting(Disable.Videoinfo)">NowPlayingVideoWidget</include>
 		<include condition="!Skin.HasSetting(Disable.Musicinfo)">NowPlayingMusicWidget</include>
 		<control type="group">
@@ -258,5 +261,10 @@
 			</control>
 		</control>
 		<include>HomeRecentlyAddedInfo</include>
+=======
+		<include condition="Skin.HasSetting(Enable.HomeDefault)">HomeDefault</include>
+		<include condition="Skin.HasSetting(Enable.HomeTopMenu)">HomeTopMenu</include>
+		<include condition="Skin.HasSetting(Enable.HomeVerticalMenu)">HomeVerticalMenu</include>
+>>>>>>> bryanbrazil/master
 	</controls>
 </window>

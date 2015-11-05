@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">90100</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>457</left>
+		<left>614</left>
 		<top>330</top>
 	</coordinates>
 	<onload condition="IsEmpty(Skin.String(Overlay.Toggle))">SetProperty(OverlayUnwatched,True,home)</onload>
@@ -26,27 +26,14 @@
 	<onunload condition="IsEmpty(Window(Home).Property(OverlayUnwatched)) + IsEmpty(Window(Home).Property(OverlayWatched))">SetProperty(Overlay.Path,overlays/showcase/3/,home)</onunload>
 	<include>dialogeffect</include>
 	<controls>
-		<control type="image">
-			<left>157</left>
-			<top>0</top>
-			<width>692</width>
-			<height>420</height>
-			<texture border="12">dialog_context.png</texture>
-			<colordiffuse>context</colordiffuse>
-		</control>
-		<control type="label" id="1">
-			<left>30</left>
-			<top>32</top>
-			<width>940</width>
-			<height>40</height>
-			<font>font15_title</font>
-			<label>$LOCALIZE[31091]</label>
-			<align>center</align>
-			<textcolor>dialogheader</textcolor>
-			<font>font15_title</font>
-		</control>
+		<include name="DialogBackgroundCommons">
+            <param name="DialogBackgroundWidth" value="692" />
+            <param name="DialogBackgroundHeight" value="420" />
+            <param name="DialogHeaderLabel" value="$LOCALIZE[31091]" />
+            <param name="DialogHeaderId" value="1" />
+        </include>
 		<control type="list" id="90100">
-			<left>189</left>
+			<left>32</left>
 			<top>88</top>
 			<width>630</width>
 			<height>480</height>
@@ -63,8 +50,8 @@
 					<height>100</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>grey</textcolor>
-					<selectedcolor>selected</selectedcolor>
+					<textcolor>$VAR[ColorTextVar]</textcolor>
+					<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -76,12 +63,13 @@
 					<height>100</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
-				<control type="image">
-					<left>558</left>
-					<top>18</top>
-					<width>64</width>
-					<height>64</height>
-					<texture>$INFO[ListItem.Property(Radio)]</texture>
+				<control type="label">
+					<left>500</left>
+					<width>100</width>
+					<height>100</height>
+					<font>font14</font>
+					<align>right</align>
+					<label>$INFO[ListItem.Property(Radio)]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="100" width="630">
@@ -89,7 +77,7 @@
 					<width>629</width>
 					<height>100</height>
 					<texture>listselect_fo.png</texture>
-					<colordiffuse>listselect</colordiffuse>
+					<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -99,8 +87,8 @@
 					<height>100</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>selected</selectedcolor>
+					<textcolor>$VAR[ColorTextVar]</textcolor>
+					<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -114,12 +102,13 @@
 					<height>100</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
-				<control type="image">
-					<left>558</left>
-					<top>18</top>
-					<width>64</width>
-					<height>64</height>
-					<texture>$INFO[ListItem.Property(Radio)]</texture>
+				<control type="label">
+					<left>500</left>
+					<width>100</width>
+					<height>100</height>
+					<font>font14</font>
+					<align>right</align>
+					<label>$INFO[ListItem.Property(Radio)]</label>
 				</control>
 			</focusedlayout>
 			<content>
@@ -127,48 +116,48 @@
 					<label>$LOCALIZE[13404]</label>
 					<icon>overlays/showcase/resumable.png</icon>
 					<onclick>Skin.SetBool(Disable.Resumable)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16041]</property>
 					<visible>!Skin.HasSetting(Disable.Resumable)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[13404]</label>
 					<icon>overlays/showcase/resumable.png</icon>
 					<onclick>Skin.Reset(Disable.Resumable)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16039]</property>
 					<visible>Skin.HasSetting(Disable.Resumable)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16102]</label>
 					<icon>overlays/showcase/1/OverlayWatched.png</icon>
 					<onclick>ClearProperty(OverlayWatched,Home)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16041]</property>
 					<visible>!IsEmpty(Window(Home).Property(OverlayWatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16102]</label>
 					<icon>overlays/showcase/1/OverlayWatched.png</icon>
 					<onclick>SetProperty(OverlayWatched,True,home)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16039]</property>
 					<visible>IsEmpty(Window(Home).Property(OverlayWatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16101]</label>
 					<icon>overlays/showcase/1/OverlayUnwatched.png</icon>
 					<onclick>ClearProperty(OverlayUnwatched,Home)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16041]</property>
 					<visible>!IsEmpty(Window(Home).Property(OverlayUnwatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16101]</label>
 					<icon>overlays/showcase/1/OverlayUnwatched.png</icon>
 					<onclick>SetProperty(OverlayUnwatched,True,home)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">$LOCALIZE[16039]</property>
 					<visible>IsEmpty(Window(Home).Property(OverlayUnwatched))</visible>
 				</item>
 			</content>
 		</control>
 		<control type="scrollbar" id="60">
-			<left>821</left>
+			<left>664</left>
 			<top>88</top>
 			<height>480</height>
 			<width>8</width>

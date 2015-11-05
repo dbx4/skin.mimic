@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<zorder>2</zorder>
 	<coordinates>
 		<left>1090</left>
 		<top>75</top>
@@ -8,6 +7,8 @@
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="group">
+			<animation effect="slide" time="0" tween="cubic" easing="out" start="0,0" end="0,77" condition="Skin.HasSetting(Enable.HomeTopMenu) + Window.IsActive(Home)">Conditional</animation>
+			<animation effect="slide" time="0" tween="cubic" easing="out" start="0,0" end="0,-45" condition="Skin.HasSetting(Enable.HomeVerticalMenu) + Window.IsActive(Home)">Conditional</animation>
 			<control type="image">
 				<description>background image</description>
 				<left>0</left>
@@ -15,17 +16,15 @@
 				<width>800</width>
 				<height>166</height>
 				<texture border="12">dialog_context.png</texture>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 			</control>
 			<control type="image" id="400">
-				<description>avatar</description>
 				<left>30</left>
 				<top>34</top>
 				<width>100</width>
 				<height>100</height>
 				<bordersize>1</bordersize>
 				<aspectratio>keep</aspectratio>
-				<texture>DefaultFile.png</texture>
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
@@ -35,7 +34,7 @@
 				<height>50</height>
 				<font>font15_title</font>
 				<textoffsetx>15</textoffsetx>
-				<textcolor>themecolor</textcolor>
+				<textcolor>$VAR[ColorHighlightVar]</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<scrollout>false</scrollout>
@@ -49,44 +48,11 @@
 				<height>30</height>
 				<font>font15</font>
 				<textoffsetx>15</textoffsetx>
-				<textcolor>grey</textcolor>
+				<textcolor>$VAR[ColorTextVar]</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
-			</control>
-			<control type="image" id="403">
-				<description>avatar</description>
-				<left>30</left>
-				<top>34</top>
-				<width>100</width>
-				<height>100</height>
-				<bordersize>1</bordersize>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconInfo.png</texture>
-			</control>
-			<control type="image" id="404">
-				<description>avatar</description>
-				<left>30</left>
-				<top>34</top>
-				<width>100</width>
-				<height>100</height>
-				<bordersize>1</bordersize>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconWarning.png</texture>
-			</control>
-			<control type="image" id="405">
-				<description>avatar</description>
-				<left>30</left>
-				<top>34</top>
-				<width>100</width>
-				<height>100</height>
-				<bordersize>1</bordersize>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconError.png</texture>
 			</control>
 		</control>
 	</controls>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>50</defaultcontrol>
+	<menucontrol>9051</menucontrol>
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
@@ -33,7 +34,7 @@
 						<height>105</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="IsEmpty(ListItem.Thumb)">Conditional</animation>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="IsEmpty(ListItem.Art(thumb))">Conditional</animation>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<visible>!SubString(ListItem.Icon,Default,left)</visible>
 					</control>
@@ -44,8 +45,8 @@
 						<height>105</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<colordiffuse>grey</colordiffuse>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="IsEmpty(ListItem.Thumb)">Conditional</animation>
+						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="IsEmpty(ListItem.Art(thumb))">Conditional</animation>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<visible>SubString(ListItem.Icon,Default,left)</visible>
 					</control>
@@ -55,8 +56,8 @@
 						<width>960</width>
 						<height>120</height>
 						<font>font30</font>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -67,8 +68,8 @@
 						<height>120</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -79,7 +80,7 @@
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$VAR[ListItem.Overlay]</texture>
-						<colordiffuse>grey</colordiffuse>
+						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 					</control>
 				</itemlayout>
 				<focusedlayout height="120" width="1140">
@@ -89,7 +90,7 @@
 						<width>1140</width>
 						<height>120</height>
 						<texture>listselect_fo.png</texture>
-						<colordiffuse>listselect</colordiffuse>
+						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						<visible>Control.HasFocus(50)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -110,7 +111,7 @@
 						<height>105</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<colordiffuse>white</colordiffuse>
+						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<visible>SubString(ListItem.Icon,Default,left)</visible>
 					</control>
@@ -120,8 +121,8 @@
 						<width>960</width>
 						<height>120</height>
 						<font>font30</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -133,8 +134,8 @@
 						<height>120</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -146,7 +147,7 @@
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$VAR[ListItem.Overlay]</texture>
-						<colordiffuse>white</colordiffuse>
+						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 					</control>
 				</focusedlayout>
 			</control>
@@ -168,9 +169,9 @@
 					<width>570</width>
 					<height>321</height>
 					<aspectratio align="center" aligny="center">scale</aspectratio>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
+					<visible>!IsEmpty(ListItem.Art(thumb))</visible>
 				</control>
 				<control type="textbox">
 					<description>Description</description>
@@ -178,7 +179,7 @@
 					<width>570</width>
 					<height>275</height>
 					<font>font14_textbox5</font>
-					<textcolor>grey</textcolor>
+					<textcolor>$VAR[ColorTextVar]</textcolor>
 					<label>$INFO[ListItem.Plot]$INFO[ListItem.Date, (,)]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				</control>

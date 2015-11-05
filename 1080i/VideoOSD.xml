@@ -8,6 +8,18 @@
 	<onload condition="VideoPlayer.Content(livetv)">SetFocus(808)</onload>
 	<onload condition="!VideoPlayer.Content(livetv)">SetFocus(602)</onload>
 	<controls>
+		<control type="slider">
+			<description>Seek Slider</description>
+			<left>30</left>
+			<top>1014</top>
+			<width>1860</width>
+			<height>37</height>
+			<texturesliderbar>-</texturesliderbar>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<action>seek</action>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
+		</control>
 		<control type="group">
 			<animation effect="slide" end="0,-238" time="240" tween="quadratic" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
 			<animation effect="slide" start="0,-238" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
@@ -16,21 +28,21 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>1920</width>
+				<width>FullScreenWidth</width>
 				<height>110</height>
 				<texture>background.png</texture>
-				<colordiffuse>background</colordiffuse>
+				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
 			<control type="grouplist" id="202">
 				<top>20</top>
 				<height>144</height>
-				<width>1920</width>
+				<width>FullScreenWidth</width>
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
-				<onup>703</onup>
-				<ondown>701</ondown>
+				<onup>701</onup>
+				<ondown>703</ondown>
 				<onleft>202</onleft>
 				<onright>202</onright>
 				<visible>!VideoPlayer.Content(livetv)</visible>
@@ -43,7 +55,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(videobookmarks)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="701">
 					<texturefocus>osd/buttons/OSDAudio.png</texturefocus>
@@ -53,7 +65,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="702">
 					<texturefocus>osd/buttons/OSDVideo.png</texturefocus>
@@ -63,7 +75,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="600">
 					<texturefocus>osd/buttons/OSDPrevTrack.png</texturefocus>
@@ -73,7 +85,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Previous)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="601">
 					<texturefocus>osd/buttons/OSDRewind.png</texturefocus>
@@ -83,7 +95,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Rewind)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="togglebutton" id="602">
 					<texturefocus>osd/buttons/OSDPause.png</texturefocus>
@@ -97,7 +109,7 @@
 					<font>-</font>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<onclick>PlayerControl(Play)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="603">
 					<texturefocus>osd/buttons/OSDStop.png</texturefocus>
@@ -107,7 +119,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Stop)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="604">
 					<texturefocus>osd/buttons/OSDForward.png</texturefocus>
@@ -117,7 +129,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Forward)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="605">
 					<texturefocus>osd/buttons/OSDNextTrack.png</texturefocus>
@@ -127,7 +139,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Next)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="703">
 					<texturefocus>osd/buttons/OSDSubtitles.png</texturefocus>
@@ -138,7 +150,7 @@
 					<font>-</font>
 					<onclick>Close</onclick>
 					<onclick>ActivateWindow(SubtitleSearch)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="704">
 					<texturefocus>osd/buttons/OSDDvd.png</texturefocus>
@@ -149,7 +161,7 @@
 					<font>-</font>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="705">
 					<texturefocus>osd/buttons/OSDStereoscopic.png</texturefocus>
@@ -160,7 +172,7 @@
 					<font>-</font>
 					<onclick>StereoMode</onclick>
 					<visible>VideoPlayer.IsStereoscopic</visible>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="706">
 					<texturefocus>osd/buttons/OSDInfo.png</texturefocus>
@@ -172,13 +184,13 @@
 					<onclick>Close</onclick>
 					<onclick>ActivateWindow(fullscreeninfo)</onclick>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(files)</visible>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 			</control>
 			<control type="grouplist" id="202">
 				<top>20</top>
 				<height>144</height>
-				<width>1920</width>
+				<width>FullScreenWidth</width>
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>
@@ -196,7 +208,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="801">
 					<texturefocus>osd/buttons/OSDVideo.png</texturefocus>
@@ -206,7 +218,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="802">
 					<texturefocus>osd/buttons/OSDChannelUP.png</texturefocus>
@@ -216,7 +228,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Previous)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="803">
 					<textoffsety>60</textoffsety>
@@ -227,7 +239,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Next)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="804">
 					<texturefocus>osd/buttons/OSDRewind.png</texturefocus>
@@ -238,7 +250,7 @@
 					<font>-</font>
 					<onclick>PlayerControl(Rewind)</onclick>
 					<enable>Player.SeekEnabled</enable>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="togglebutton" id="812">
 					<texturefocus>osd/buttons/OSDPause.png</texturefocus>
@@ -253,7 +265,7 @@
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<onclick>PlayerControl(Play)</onclick>
 					<enable>Player.PauseEnabled</enable>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="805">
 					<texturefocus>osd/buttons/OSDStop.png</texturefocus>
@@ -263,7 +275,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>PlayerControl(Stop)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="806">
 					<texturefocus>osd/buttons/OSDForward.png</texturefocus>
@@ -274,7 +286,7 @@
 					<font>-</font>
 					<onclick>PlayerControl(Forward)</onclick>
 					<enable>Player.SeekEnabled</enable>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="togglebutton" id="10">
 					<texturefocus>osd/buttons/OSDRecordOff.png</texturefocus>
@@ -289,7 +301,7 @@
 					<onclick>PlayerControl(Record)</onclick>
 					<enable>Player.CanRecord</enable>
 					<usealttexture>Player.Recording</usealttexture>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="807">
 					<texturefocus>osd/buttons/OSDChannelList.png</texturefocus>
@@ -300,7 +312,7 @@
 					<font>-</font>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="808">
 					<texturefocus>osd/buttons/OSDepg.png</texturefocus>
@@ -311,7 +323,7 @@
 					<font>-</font>
 					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="809">
 					<texturefocus>osd/buttons/OSDStereoscopic.png</texturefocus>
@@ -322,7 +334,7 @@
 					<font>-</font>
 					<onclick>ToggleStereoMode</onclick>
 					<visible>VideoPlayer.IsStereoscopic</visible>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="810">
 					<texturefocus>osd/buttons/OSDTeleText.png</texturefocus>
@@ -332,7 +344,7 @@
 					<height>64</height>
 					<font>-</font>
 					<onclick>ActivateWindow(Teletext)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 				<control type="button" id="811">
 					<texturefocus>osd/buttons/OSDInfo.png</texturefocus>
@@ -343,7 +355,7 @@
 					<font>-</font>
 					<onclick>Close</onclick>
 					<onclick>ActivateWindow(fullscreeninfo)</onclick>
-					<colordiffuse>grey</colordiffuse>
+					<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 				</control>
 			</control>
 		</control>

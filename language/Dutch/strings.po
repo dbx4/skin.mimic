@@ -29,8 +29,8 @@ msgid "Show weather/clock/library info"
 msgstr "Toon weerbericht, klok en bibliotheekinfo"
 
 msgctxt "#31003"
-msgid "Power Options"
-msgstr "Energiebeheer"
+msgid "LowList"
+msgstr "LowList"
 
 msgctxt "#31004"
 msgid "Working"
@@ -45,16 +45,16 @@ msgid "View Options"
 msgstr "Weergaveopties"
 
 msgctxt "#31007"
-msgid "Setup home"
-msgstr "Instellen hoofdmenu"
+msgid "Configure Views"
+msgstr "Configureer weergaves"
 
 msgctxt "#31008"
-msgid "Full screen"
-msgstr "Volledig scherm"
+msgid "Deselect the views you want to hide"
+msgstr "Deselecteer de weergaves die je wilt verbergen"
 
 msgctxt "#31009"
-msgid "Total Duration"
-msgstr "Totale duur"
+msgid "Colours"
+msgstr "Kleuren"
 
 msgctxt "#31010"
 msgid "Next episode"
@@ -69,16 +69,16 @@ msgid "Airs"
 msgstr "wordt uitgezonden op"
 
 msgctxt "#31013"
-msgid "Displays weather, date, time, and library statistics (if configured) on the Home screen."
-msgstr "Toon weerbericht, datum, tijd en bibliotheekinformatie (indien geconfigureerd) op het hoofdmenu."
+msgid "Displays weather, date, time, and library statistics (if configured) on the home screen."
+msgstr "Toont weer, datum, tijd, en bibliotheek statistieken (wanneer geconfigureerd) op het startscherm."
 
 msgctxt "#31014"
 msgid "Extras"
 msgstr "Extra's"
 
 msgctxt "#31015"
-msgid "Choose which view modes to enable. List view is the default and cannot be disabled."
-msgstr "Kies welke weergave modus om te activeren. Lijst weergave is de standaard modus en kan niet worden deactiveerd."
+msgid "Settings"
+msgstr "Instellingen"
 
 msgctxt "#31016"
 msgid "Poster"
@@ -89,16 +89,16 @@ msgid "Hide filenames"
 msgstr "Verberg bestandsnaam"
 
 msgctxt "#31018"
-msgid "InfoPanel"
-msgstr "InfoPaneel"
+msgid "Select home layout"
+msgstr "Selecteer start lay-out"
 
 msgctxt "#31019"
 msgid "Network"
 msgstr "Netwerk"
 
 msgctxt "#31020"
-msgid "Extra-fanart"
-msgstr "Extra-Fanart"
+msgid "Choose from three home layouts: default, top menu, and vertical menu."
+msgstr "Kies uit drie start lay-outs: standaard, menu boven, en verticaal menu."
 
 msgctxt "#31021"
 msgid "InfoWall"
@@ -113,8 +113,8 @@ msgid "Set single image background"
 msgstr "Instellen enkele afbeelding achtergrond"
 
 msgctxt "#31024"
-msgid "Page"
-msgstr "Pagina"
+msgid "Reset Skin Settings"
+msgstr "Herstel skin instellingen"
 
 msgctxt "#31025"
 msgid "Items"
@@ -177,8 +177,8 @@ msgid "Actions"
 msgstr "Acties"
 
 msgctxt "#31040"
-msgid "Now Playing"
-msgstr "Speelt nu"
+msgid "Are you sure you want to reset all skin settings? Caution, this will reset all menus, backgrounds, and widgets to their default setting."
+msgstr "Weet u zeker dat u alle skin instellingen wilt herstellen? Pas op, dit zal alle menu`s, achtergronden en widgets herstellen naar hun standaard instelling."
 
 msgctxt "#31041"
 msgid "Select widget"
@@ -189,8 +189,8 @@ msgid "Show \"Now Playing\" information blended in the background"
 msgstr "Toon speelt nu informatie op in de achtergrond"
 
 msgctxt "#31043"
-msgid "Platform"
-msgstr "Platform"
+msgid "Export skin settings"
+msgstr "Exporteer skin instellingen"
 
 msgctxt "#31044"
 msgid "Views: Plot outline | Info dialog: Full plot"
@@ -209,20 +209,12 @@ msgid "Best Picture"
 msgstr "Beste afbeelding"
 
 msgctxt "#31048"
-msgid "Visualisation Presets"
-msgstr "Visualisatie voorkeuzes"
+msgid "Music Visualisation Settings"
+msgstr "Music visualisatie opties"
 
 msgctxt "#31049"
 msgid "IMDb Top 250"
 msgstr "IMDb Top 250"
-
-msgctxt "#31050"
-msgid "Sort: Ascending"
-msgstr "Sorteer: Oplopend"
-
-msgctxt "#31051"
-msgid "Sort: Descending"
-msgstr "Sorteer: Aflopend"
 
 msgctxt "#31052"
 msgid "BigList"
@@ -289,8 +281,8 @@ msgid "Update rating"
 msgstr "Beoordeling aanpassen"
 
 msgctxt "#31068"
-msgid "CD Wall"
-msgstr "CD-muur"
+msgid "CD wall"
+msgstr "CD Muur"
 
 msgctxt "#31069"
 msgid "Change location"
@@ -301,12 +293,12 @@ msgid "YouTube"
 msgstr "YouTube"
 
 msgctxt "#31071"
-msgid "While browsing the library"
-msgstr "Tijdens zoeken in de bibliotheek"
+msgid "Top menu"
+msgstr "Top Menu"
 
 msgctxt "#31072"
-msgid "On open video info"
-msgstr "Bij openen video info"
+msgid "Vertical menu"
+msgstr "Verticaal menu"
 
 msgctxt "#31073"
 msgid "Move menu item"
@@ -328,10 +320,6 @@ msgctxt "#31077"
 msgid "ShowCase"
 msgstr "Showcase"
 
-msgctxt "#31078"
-msgid "Wall"
-msgstr "Muur"
-
 msgctxt "#31079"
 msgid "Shift"
 msgstr "Shift"
@@ -341,36 +329,32 @@ msgid "Manage submenu"
 msgstr "Beheer submenu"
 
 msgctxt "#31081"
-msgid "Enable custom submenus"
-msgstr "Activeer aangepast submenu"
+msgid "View extended info"
+msgstr "Toon uitgebreide info"
 
 msgctxt "#31082"
 msgid "Musicvideo library statistics"
 msgstr "Muziekvideo bibliotheekstatistieken"
 
 msgctxt "#31083"
-msgid "Enable Next Aired information in the videolibrary"
-msgstr "Activeer \"Next Aired\" informatie in de videobibliotheek"
+msgid "Enable Next Aired information in the video library"
+msgstr "Activeer informatie over de volgende uitzending in de videobibliotheek"
 
 msgctxt "#31084"
 msgid "Conditional weather"
 msgstr "Op het weer gebaseerd"
 
 msgctxt "#31085"
-msgid "BannerInfo"
-msgstr "Bannerinfo"
-
-msgctxt "#31086"
-msgid "Icon"
-msgstr "Icoon"
-
-msgctxt "#31087"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31087"
+msgid "Add to playlist"
+msgstr "Aan afspeellijst toevoegen"
+
 msgctxt "#31088"
-msgid "BannerWall"
-msgstr "Bannermuur"
+msgid "Logo"
+msgstr "Logo"
 
 msgctxt "#31089"
 msgid "Play item on startup"
@@ -385,8 +369,8 @@ msgid "Select items"
 msgstr "Selecteer items"
 
 msgctxt "#31092"
-msgid "Fullscreen fanart"
-msgstr "Volledig scherm fan-art"
+msgid "View fanart"
+msgstr "Toon Fanart"
 
 msgctxt "#31093"
 msgid "Episode"
@@ -394,10 +378,10 @@ msgstr "Aflevering"
 
 msgctxt "#31094"
 msgid "List view layout"
-msgstr "Lijstweergave layout"
+msgstr "Lijstweergave indeling"
 
 msgctxt "#31095"
-msgid "Slim List"
+msgid "Slim list"
 msgstr "Smalle lijst"
 
 msgctxt "#31096"
@@ -417,8 +401,8 @@ msgid "Music library statistics"
 msgstr "Informatie over muziek in de bibliotheek"
 
 msgctxt "#31100"
-msgid "Movie Crew"
-msgstr "Film crew"
+msgid "Landscape"
+msgstr "Landschap"
 
 msgctxt "#31101"
 msgid "Show home fanart overlay"
@@ -433,12 +417,12 @@ msgid "N/A"
 msgstr "Niet beschikbaar"
 
 msgctxt "#31104"
-msgid "Similar artists"
-msgstr "Soortgelijke artiest"
+msgid "Info panel"
+msgstr "Info paneel"
 
 msgctxt "#31105"
-msgid "More albums from"
-msgstr "Meer albums van"
+msgid "Resets all skin settings. Caution, this will reset all menus, backgrounds, and widgets to their default setting."
+msgstr "Herstelt alle skin instellingen. Pas op, dit zal alle menu`s, achtergronden en widgets herstellen naar hun standaard instelling."
 
 msgctxt "#31106"
 msgid "On info"
@@ -449,44 +433,88 @@ msgid "Persistent"
 msgstr "Vasthoudend"
 
 msgctxt "#31108"
-msgid "Enable artist information feed (if available)"
-msgstr "Toon informatie over artiesten (indien beschikbaar)"
+msgid "Enable artist biography (if available)"
+msgstr "Activeer artiest biografie (wanneer beschikbaar)"
 
 msgctxt "#31109"
-msgid "Unwatched episode count"
-msgstr "Niet bekeken afleveringen"
+msgid "Reset skin settings"
+msgstr "Herstel skin instellingen"
 
 msgctxt "#31110"
 msgid "Set path to music library"
 msgstr "Stel locatie naar muziekbibliotheek in"
 
 msgctxt "#31111"
-msgid "Displays an overlay on the Home screen fanart and disables the widget background."
-msgstr "Toon een overlay op het startscherm fanart en de-activeert de widget achtergrond."
+msgid "Displays an overlay on the home screen fanart and disables the widget background."
+msgstr "Toont een overlap bovenop het startscherm fan-art en deactiveert de widget achtergrond."
+
+msgctxt "#31112"
+msgid "Always show submenus"
+msgstr "Toon submenu`s altijd"
+
+msgctxt "#31113"
+msgid "Displays submenus all the time on the alternative home layouts. Enable for best results with mouse/touch input devices."
+msgstr "Toont submenu's altijd op de alternatieve start lay-outs. activeer voor de beste reslutaten met muis/druk invoer apparaten."
+
+msgctxt "#31114"
+msgid "When enabled, the selected playlist will play on startup."
+msgstr "Indien geactiveerd zal de geselecteerde afspeellijst afspelen na het starten van Kodi."
+
+msgctxt "#31115"
+msgid "Set fallback background image"
+msgstr "Stel standaard achtergrond in"
+
+msgctxt "#31116"
+msgid "Change the background image that is displayed when no other background is set."
+msgstr "Wijzigt de achtergrondafbeelding die wordt weergegeven indien er geen andere achtergrond is ingesteld."
+
+msgctxt "#31117"
+msgid "Large icons"
+msgstr "Grote iconen"
+
+msgctxt "#31118"
+msgid "Extra fanart"
+msgstr "Extra fanart"
+
+msgctxt "#31119"
+msgid "Add extra fanart for movies"
+msgstr "Voeg extra film fanart toe"
+
+msgctxt "#31120"
+msgid "Add extra fanart for TV shows"
+msgstr "Voeg extra TV show fanart toe"
+
+msgctxt "#31121"
+msgid "Adds extra fanart to the database for use in InfoWall, ShowCase, and BannerInfo views. Depends on Toolbox add-on."
+msgstr "Voegt extra fanart aan de database toe om te gebruiken in InfoWall, ShowCase en BannerInfo weergaven. Afhankelijk van de Toolbox add-on. "
 
 msgctxt "#31122"
 msgid "Displays a bottom bar with now playing information throughout Mimic."
 msgstr "Toon een bodembalk met nu afspelende informatie overal in Mimic."
 
 msgctxt "#31123"
-msgid "Show \"Now Playing\" info everywhere"
-msgstr "Toon \"nu afspelen\" info overal"
+msgid "Show now playing information bar"
+msgstr "Toon nu afspelen informatiebalk"
 
 msgctxt "#31124"
-msgid "Show background \"Now Playing\" video"
-msgstr "Toon actieve video op de achtergrond"
+msgid "Show now playing video in background"
+msgstr "Toon huidige video op de achtergrond"
 
 msgctxt "#31125"
-msgid "Show background \"Now Playing\" visualisation"
-msgstr "Toon actieve visualisatie op de achtergrond"
+msgid "Show music visualisation in background"
+msgstr "Toon muziek visualisaties in achtergrond"
 
 msgctxt "#31126"
-msgid "Enable TvTunes integration"
-msgstr "Activeer \"TvTunes\" integratie"
+msgid "Setup custom video widgets so they can be assigned to main menu items. Video addon paths must first be added to favourites."
+msgstr "Stel eigen widgets in die kunnen worden toegewezen aan een menuitem. Video addon paden moeten eerst worden toegevoegd als favoriet."
 
 msgctxt "#31127"
 msgid "Select View"
 msgstr "Selecteer vertoning"
+
+msgctxt "#31128"
+msgid "Import skin settings"
+msgstr "Importeer skin instellingen"
 
 msgctxt "#31129"
 msgid "Hide Fanart in full screen visualisation"
@@ -504,13 +532,157 @@ msgctxt "#31132"
 msgid "Musicvideo playlist statistics"
 msgstr "Muziekvideo afspeellijst statistieken"
 
+msgctxt "#31133"
+msgid "Export skin settings to a file."
+msgstr "Exporteer skin instellingen naar een bestand."
+
+msgctxt "#31134"
+msgid "Import skin settings from a file."
+msgstr "Importeer skin instellingen van een bestand."
+
+msgctxt "#31135"
+msgid "Enable keyboard auto complete"
+msgstr "Schakel toetsenbord auto-aanvullen in"
+
+msgctxt "#31136"
+msgid "Enables auto complete for the Kodi keyboard, with results provided by Google or YouTube. Depends on Extended Info add-on."
+msgstr "Activeert automatisch aanvullen van woorden via het Kodi keyboard. Woorden worden via Google of YouTube aangevuld. Vereist installatie van de Extended Info add-on."
+
+msgctxt "#31137"
+msgid "No results found"
+msgstr "Geen resultaten gevonden"
+
+msgctxt "#31138"
+msgid "Add colour"
+msgstr "Voeg kleur toe"
+
+msgctxt "#31139"
+msgid "Hex colour code must be formatted as AARRGGBB."
+msgstr "Hex kleurcode moet het volgende formaat hebben: AARRGGBB"
+
+msgctxt "#31140"
+msgid "Show plot"
+msgstr "Toon plot"
+
+msgctxt "#31141"
+msgid "Show description"
+msgstr "Toon omschrijving"
+
 msgctxt "#31142"
 msgid "Settings level"
 msgstr "Instellingsniveau"
 
+msgctxt "#31143"
+msgid "Number of main menu items on default home layout"
+msgstr "Nummer van hoofdmenu items op standaard start lay-out"
+
+msgctxt "#31144"
+msgid "Select the number of main menu items to be displayed on the default home layout."
+msgstr "Selecteer het nummer van hoofdmenu items te worden getoond op het standaard hoofdmenu lay-out"
+
+msgctxt "#31145"
+msgid "- Set general text colour"
+msgstr "- Instellen algemene tekst kleur"
+
+msgctxt "#31146"
+msgid "Choose General Text Colour"
+msgstr "Kies algemene tekst kleur"
+
+msgctxt "#31147"
+msgid "- Set menu text colour"
+msgstr "-instellen menu tekst kleur"
+
+msgctxt "#31148"
+msgid "Choose Menu Text Colour"
+msgstr "Kies menu tekst kleur"
+
+msgctxt "#31149"
+msgid "Choose a widget to display on the home screen to have easy access to content from the library."
+msgstr "Kies een widget om te tonen op het startmenu om gemakkelijk toegang te hebben naar de inhoud van de bibliotheek"
+
+msgctxt "#31150"
+msgid "Customise the submenu items that are associated with this main menu item."
+msgstr "Pas de submenu items aan die verbonden zijn met dit hoofdmenu item."
+
+msgctxt "#31151"
+msgid "Wrap list"
+msgstr "Lijst inpakken"
+
+msgctxt "#31152"
+msgid "Art"
+msgstr "Art"
+
+msgctxt "#31153"
+msgid "Select Art"
+msgstr "Selecteer afbeelding"
+
+msgctxt "#31154"
+msgid "Lanscape art"
+msgstr "Landschap afbeelding"
+
 msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Bron liedtekst"
+
+msgctxt "#31206"
+msgid "Customise the skin colours. When not enabled, the colours in Settings > Appearance are used."
+msgstr "Aanpassen skin kleuren. wanneer niet geactiveerd, de kleuren in instellingen >Uiterlijk worden gebruikt."
+
+msgctxt "#31207"
+msgid "Choose the colour for focused items and highlighted text."
+msgstr "Kis de kleur voor gefocuste bestanden en gemarkeerde tekst."
+
+msgctxt "#31208"
+msgid "Choose the colour for the background."
+msgstr "Kies de kleur voor de achtergrond."
+
+msgctxt "#31209"
+msgid "Choose the colour for dialogs and context menus."
+msgstr "Kis de kleur voor vensters en contextmenu`s"
+
+msgctxt "#31210"
+msgid "Choose the general text colour."
+msgstr "Kies de algemene tekst kleur"
+
+msgctxt "#31211"
+msgid "Enable colour customiser"
+msgstr "Activeer kleur aanpasser"
+
+msgctxt "#31212"
+msgid "- Set highlight colour"
+msgstr "- instellen markering kleur"
+
+msgctxt "#31213"
+msgid "- Set background colour"
+msgstr "- instellen achtergrond kleur"
+
+msgctxt "#31214"
+msgid "- Set dialog colour"
+msgstr "- instellen dialoog kleur"
+
+msgctxt "#31215"
+msgid "- Set text colour"
+msgstr "- instellen tekst kleur"
+
+msgctxt "#31216"
+msgid "Choose Highlight Colour"
+msgstr "Kies markering kleur"
+
+msgctxt "#31217"
+msgid "Choose Background Colour"
+msgstr "Kies achtergrond kleur"
+
+msgctxt "#31218"
+msgid "Choose Dialog Colour"
+msgstr "Kies dialoog kleur"
+
+msgctxt "#31219"
+msgid "Choose Text Colour"
+msgstr "Kies tekst kleur"
+
+msgctxt "#31220"
+msgid "Choose the text colour for the main menu and submenu."
+msgstr "Kies de tekst kleur voor het hoofdmenu en submenu."
 
 msgctxt "#31300"
 msgid "Overview"
@@ -521,20 +693,36 @@ msgid "Last Updated"
 msgstr "Laatst bijgewerkt"
 
 msgctxt "#31307"
-msgid "Hide Fanart"
-msgstr "Verberg fanart"
+msgid "Hide fanart"
+msgstr "Verberg Fanart"
 
 msgctxt "#31308"
 msgid "NotoSerif"
-msgstr "notoSerif"
+msgstr "NotoSerif"
 
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Gebruikt geheugen:"
 
+msgctxt "#31310"
+msgid "Blurred album cover"
+msgstr "Wazige albumafbeelding"
+
+msgctxt "#31311"
+msgid "Custom widgets"
+msgstr "Aangepaste widgets"
+
+msgctxt "#31312"
+msgid "Custom Widget"
+msgstr "Aangepaste widget"
+
+msgctxt "#31313"
+msgid "Square"
+msgstr "Vierkant"
+
 msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "Fanartpad instellen"
+msgid "Set fanart path"
+msgstr "Kies Fanart Locatie"
 
 msgctxt "#31320"
 msgid "Last Logged In"
@@ -552,50 +740,6 @@ msgctxt "#31390"
 msgid "Skin default"
 msgstr "Skin standaardwaarden"
 
-msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
-msgstr "[B]INSTELLINGEN UITERLIJK CONFIGUREREN[/B][CR][CR]Wijzig skin · Stel taal en regio in · Configureer bestandslijstopties[CR] stel schermbeveiliging in"
-
-msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]VIDEO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw videobibliotheek · Configureer videoafspeelopties en -bestandslijstsopties [CR] Stel lettertype in voor ondertitels"
-
-msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
-msgstr "[B]MUZIEKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw muziekbibliotheek · Configureer muziekafspeelopties en -bestandslijstopties[CR]Configureer nummer indienen · Configureer karaokeopties"
-
-msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
-msgstr "[B]AFBEELDINGSINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer bestandslijstopties en diavoorstelling"
-
-msgctxt "#31404"
-msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information"
-msgstr "[B]WEERINSTELLINGEN CONFIGUREREN[/B][CR][CR]Geef drie locaties op voor weersverwachtingen."
-
-msgctxt "#31405"
-msgid "[B]MONITOR YOUR SYSTEM[/B][CR][CR]Check out your hardware · Monitor CPU usage[CR]Check Kodi revision number"
-msgstr "[B]CONTROLEER UW SYSTEEM[/B][CR][CR]Bekijk uw hardware · Controleer het CPU gebruik[CR]Bekijk het Kodi versienummer"
-
-msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
-msgstr "[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer en kalibreer beeldschermen · Configureer audiouitvoer · instellen afstandsbediening[CR]Instellen energiebesparingsopties · Schakel debugging in · Configureer Hoofdbeveiliging"
-
-msgctxt "#31407"
-msgid "[B]SETUP PROFILES[/B][CR][CR]Setup and manage user profiles · Enable login screen[CR]Change password · Add a profile picture"
-msgstr "[B]PROFIELEN INSTELLEN[/B][CR][CR]Beheer en onderhoud profielen · Activeer login scherm[CR]Wijzig wachtwoord · Voeg een profielfoto toe"
-
-msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
-msgstr "[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde Add-ons · Zoek en installeer Add-ons via kodi.tv.[CR]Wijzig Add-oninstellingen"
-
-msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
-msgstr "[B]TV-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Wijzig volledig scherm info · Beheer EPG-datainstellingen"
-
-msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
-msgstr "[B]CONFIGUREER DIENSTEN[/B][CR][CR]Stel Kodi-beheer in via UPnP en HTTP · Configureer bestandsdeling[CR]Schakel Zeroconf in · Configureer AirPlay"
-
 msgctxt "#31411"
 msgid "Thai"
 msgstr "Thais"
@@ -608,13 +752,17 @@ msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr "Lokale ondertiteling aanwezig"
 
-msgctxt "#31421"
-msgid "Select your Kodi user profile[CR]to login and continue"
-msgstr "Selecteer jouw Kodi-profiel[CR]om in te loggen"
+msgctxt "#31414"
+msgid "Timeline"
+msgstr "Tijdlijn"
 
-msgctxt "#31501"
-msgid "Channel group"
-msgstr "Kanaal groep"
+msgctxt "#31415"
+msgid "Now"
+msgstr "Nu"
+
+msgctxt "#31416"
+msgid "Next"
+msgstr "Volgende"
 
 msgctxt "#31502"
 msgid "Live TV"
@@ -635,6 +783,18 @@ msgstr "Groep verwijderen"
 msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr "Beschikbare[CR]Groepen"
+
+msgctxt "#31507"
+msgid "Basic layout"
+msgstr "Basis indeling"
+
+msgctxt "#31509"
+msgid "Show now playing music notification"
+msgstr "Toon nu muziek afspelen melding"
+
+msgctxt "#31510"
+msgid "Show now playing video notification"
+msgstr "Toon nu video afspelen melding"
 
 msgctxt "#31511"
 msgid "Channel Options"
@@ -676,10 +836,6 @@ msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr "Weersverwachting ophalen..."
 
-msgctxt "#31910"
-msgid "Map & Alerts"
-msgstr "Kaart & waarschuwingen"
-
 msgctxt "#31911"
 msgid "Setup the main menu"
 msgstr "Stel het hoofdmenu in"
@@ -697,12 +853,12 @@ msgid "Top Rentals"
 msgstr "Top verhuurd"
 
 msgctxt "#31915"
-msgid "Navigation style for horizontal lists"
-msgstr "Navigatie door horizontale lijsten"
+msgid "Navigation style for widgets"
+msgstr "Navigatie stijl voor widgets"
 
 msgctxt "#31916"
-msgid "Change the way horizontal lists scroll. Default horizontal lists will wrap back to the beginning. Fixed horizontal lists have a beginning and end."
-msgstr "Verander de manier waarop horizontale lijsten scrollen. standaard horizontale lijsten scrollen terug naar het begin. Gefixeerde horizontale lijsten hebben een begin en een eind."
+msgid "Change the way widget lists scroll. Default widget lists will wrap back to the beginning. Fixed widget lists have a beginning and end."
+msgstr "Verande we mogelijkheid waarop widget lijsten scrollen. Standaard widget lijsten gaan terug  naar het begin. gefixeerde widget lijsten hebben een begin en eind. "
 
 msgctxt "#31917"
 msgid "When enabled text scrolls automatically. When disabled manual scrolling is required. Note that not every textbox has a manual button."
@@ -717,12 +873,12 @@ msgid "Projects the visualisation on the background when music is played."
 msgstr "Toon actieve visualisatie op de achtergrond."
 
 msgctxt "#31920"
-msgid "Displays a widget on the Home screen with media information when music is playing."
-msgstr "Toont een widget op het Startmenu met informatie indien muziek wordt afgespeeld. "
+msgid "Displays a notification on the home screen with media information when music is playing."
+msgstr "Toont een melding met media-informatie op het startscherm wanneer muziek wordt afgespeeld."
 
 msgctxt "#31921"
-msgid "Displays a widget on the Home screen with media information when a movie or episode is playing."
-msgstr "Toont een widget op het Startmenu met informatie indien een film of aflevering speelt. "
+msgid "Displays a notification on the home screen with media information when a movie or episode is playing."
+msgstr "Toont een melding met media-informatie op het startscherm wanneer een film of aflevering wordt afgespeeld."
 
 msgctxt "#31922"
 msgid "Trending Movies"
@@ -737,8 +893,8 @@ msgid "Trending TV Shows"
 msgstr "Populaire TV-series"
 
 msgctxt "#31925"
-msgid "Pick one of the preset backgrounds or set your own images as the menu items background."
-msgstr "Kies een standaardachtergrond of kies een eigen afbeelding."
+msgid "Pick one of the preset backgrounds or set your own images as the menu item's background."
+msgstr "Kies één van de voor-ingestelde achtergronden of stel je eigen afbeeldingen in als menu bestand achtergrond."
 
 msgctxt "#31926"
 msgid "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
@@ -749,32 +905,24 @@ msgid "Resets all above values to their defaults."
 msgstr "Herstel alle bovengenoemde waarden naar standaard."
 
 msgctxt "#31928"
-msgid "Mimic main menu layout"
-msgstr "Kopieer hoofdmenu indeling"
-
-msgctxt "#31929"
-msgid "Favourites view mode"
-msgstr "Favorieten weergave mode"
+msgid "Still there?"
+msgstr "Nog steeds aanwezig?"
 
 msgctxt "#31930"
-msgid "Choose a widget to display on the Home screen to have easy access to content from the library."
-msgstr "Kies een widget  om te tonen op het Startmenu om gemakkelijk toegang te hebben naar inhoud uit de bibliotheek."
+msgid "Continue Watching"
+msgstr "Doorgaan met kijken"
 
 msgctxt "#31931"
 msgid "Video plot preference"
 msgstr "Video plot voorkeur"
 
 msgctxt "#31932"
-msgid "Show plot outline in the library views and full plot in the video information dialog or vice versa. Falls back to full plot if no outline is available. This setting can also be toggled by pressing \"Select\" when the plot is focused in the video information dialog."
-msgstr "Toon plot samenvatting in de overzichten en volledig plot op informatiescherm of vice versa. Toont altijd volledig plot als samenvatting niet beschikbaar is. Deze instelling is aan te passen door Selecteer te kiezen als de weergave van het plot actief is op het informatiescherm."
+msgid "Show plot outline in the library views and full plot in the video information dialog or vice versa. Falls back to full plot if no outline is available."
+msgstr "Toon plot samenvatting in de bibliotheek weergaven en volledig plot in het video informatie dialoog of andersom. Valt terug naar volledig plot al samenvatting niet beschikbaar is."
 
 msgctxt "#31933"
-msgid "Select an item to display on the left top of the home screen."
-msgstr "Selecteeer het item dat linksboven op het hoofdmenu getoond wordt."
-
-msgctxt "#31934"
-msgid "Check the TvTunes addon settings for additional options"
-msgstr "Controleer de TvTunes instellingen op overige opties"
+msgid "Select an item to display on the left top of the home screen (default home layout only)."
+msgstr "Selecteer een item te tonen op de linker boven hoek van het begin scherm (alleen standaard begin lay-out)."
 
 msgctxt "#31935"
 msgid "Switch places with another menu item. Opens a dialog with a list of menu items to choose from."
@@ -784,21 +932,17 @@ msgctxt "#31936"
 msgid "Allows artist logos to be displayed outside of the artist/album information screens."
 msgstr "Sta toe dat artiestenlogo's worden getoond buiten de artiest- of albuminformatieschermen."
 
-msgctxt "#31937"
-msgid "This toggles the view mode of the Favourites window. Default is a list view, \"Icons\" is a panel view."
-msgstr "Verander de weergave van het favorietenscherm. Standaard is een lijstweergave, iconen is een paneelweergave."
-
 msgctxt "#31938"
 msgid "Enables extra information in the TV show library, like TV show status, next / latest episode, etc. Depends on TV Show Next Aired add-on."
 msgstr "Toon extra informatie in de TV Series bibliotheek, zoals:Status, volgende/nieuwste afleveringen, etc. Is afhankelijk van de TV Show next aired add-on"
 
 msgctxt "#31939"
-msgid "Always show home widgets"
-msgstr "Toon altijd start widgets"
+msgid "Always show widgets"
+msgstr "Widgets altijd tonen"
 
 msgctxt "#31940"
-msgid "Displays Home screen widgets all the time, rather than displaying them by pressing up from the main menu. Enable for best results with mouse/touch input devices."
-msgstr "Toont start widgets altijd, anders dan door omhoog te drukken van uit het start menu. Activeer voor het beste resultaat met muis/aanraak apparaten  "
+msgid "Displays home screen widgets all the time. Enable for best results with mouse/touch input devices."
+msgstr "Toont startscherm widgets altijd. activeer voor de beste resultaten met muis/aanraak invoer apparaten."
 
 msgctxt "#31941"
 msgid "Kiosk mode"
@@ -816,17 +960,13 @@ msgctxt "#31944"
 msgid "Choose which overlays to show on thumbs in icon based views. Note that the \"Resume\" flag takes precedent over any watched status."
 msgstr "Kies welke overlays te tonen op miniaturen in icoon gebaseerde weergaven. Merk op dat de \"hervat\" knop voorrang neemt over alle bekeken statussen."
 
-msgctxt "#31945"
-msgid "This toggles the layout of the List view. Default is a 7 item layout with extended info, \"Slim List\" is a 14 item, more basic layout."
-msgstr "dit schakelt de lay-out van de lijstweergave. standaard is een 7 item Lay-out met uitgebreidere informatie, \"smalle lijst\" is een 14 item, meer basische lay-out"
-
 msgctxt "#31946"
 msgid "The images selected here will show in the corresponding section if no fanart is available."
 msgstr "De hier geselecteerde afbeeldingen worden weergegeven in de overeenkomstige sectie als er geen fan-art is beschikbaar is."
 
 msgctxt "#31947"
-msgid "Setup background images"
-msgstr "Instelllen achtergronden"
+msgid "Setup section backgrounds"
+msgstr "Sectie-achtergronden instellen"
 
 msgctxt "#31948"
 msgid "Arial"
@@ -858,7 +998,7 @@ msgstr "FILMS"
 
 msgctxt "#31955"
 msgid "TV Shows"
-msgstr "TV series"
+msgstr "TV SERIES"
 
 msgctxt "#31956"
 msgid "MUSIC"
@@ -869,8 +1009,8 @@ msgid "APPS"
 msgstr "APPS"
 
 msgctxt "#31958"
-msgid "PLAY DISC"
-msgstr "SPEEL SCHIJF"
+msgid "Movie"
+msgstr "Film"
 
 msgctxt "#31959"
 msgid "SYSTEM"
@@ -883,3 +1023,31 @@ msgstr "CONCERTEN"
 msgctxt "#31961"
 msgid "Search term"
 msgstr "Zoekterm"
+
+msgctxt "#31962"
+msgid "View settings"
+msgstr "toon instellingen"
+
+msgctxt "#31963"
+msgid "EXIF"
+msgstr "EXIF"
+
+msgctxt "#31964"
+msgid "Thumbnails"
+msgstr "Miniaturen"
+
+msgctxt "#31965"
+msgid "Output"
+msgstr "Output"
+
+msgctxt "#31966"
+msgid "Repositories"
+msgstr "Repositories"
+
+msgctxt "#31967"
+msgid "- Disable autoscroll"
+msgstr "- Deactiver automatisch scrollen"
+
+msgctxt "#31968"
+msgid "Disable autoscroll for home widgets. Only applicable when option to always show widgets is selected."
+msgstr "Deactiveer automatisch scrollen voor start widgets. alleen beschikbaar wanneer de optie toon alle widgets is geselecteerd."

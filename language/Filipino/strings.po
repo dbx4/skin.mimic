@@ -20,14 +20,6 @@ msgctxt "#31006"
 msgid "View Options"
 msgstr "Tingnan ang Options"
 
-msgctxt "#31009"
-msgid "Total Duration"
-msgstr "Kabuuang Haba"
-
-msgctxt "#31024"
-msgid "Page"
-msgstr "Pahina"
-
 msgctxt "#31055"
 msgid "Open playlist"
 msgstr "Buksan ang Playlist"
@@ -39,10 +31,6 @@ msgstr "I-Save ang Playlist"
 msgctxt "#31057"
 msgid "Close playlist"
 msgstr "Isara ang Playlist"
-
-msgctxt "#31307"
-msgid "Hide Fanart"
-msgstr "Itago ang Fanart"
 
 msgctxt "#31309"
 msgid "Memory Used:"

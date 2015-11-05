@@ -24,18 +24,17 @@
 				<width>510</width>
 				<height>32</height>
 				<texture border="12">button_border.png</texture>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 			</control>
 			<control type="button" id="90202">
-				<description>Cinema Experience button</description>
+				<description>Cinema Vision button</description>
 				<width>510</width>
 				<textwidth>425</textwidth>
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
-				<visible>System.HasAddon(script.cinema.experience)</visible>
-				<visible>Container.Content(movies) + !SubString(Window(10025).Property(CinemaExperienceRunning),True)</visible>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="button" id="90203">
 				<description>Artwork downloader button</description>
@@ -44,7 +43,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
 			<control type="button" id="90204">
@@ -54,7 +53,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
 			<control type="button" id="90205">
@@ -64,7 +63,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.libraryeditor)</visible>
 			</control>
 			<control type="button" id="90206">
@@ -74,7 +73,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.ratingupdate)</visible>
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 			</control>
@@ -85,7 +84,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.tvtunes)</visible>
 				<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
 			</control>
@@ -96,7 +95,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.videoextras)</visible>
 				<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 			</control>
@@ -107,7 +106,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(plugin.video.youtube) + [Container.Content(albums) | Container.Content(songs)]</visible>
 			</control>
 			<control type="button" id="90210">
@@ -117,7 +116,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>System.HasAddon(script.playalbum) + Container.Content(albums)</visible>
 			</control>
 			<control type="button" id="90215">
@@ -127,8 +126,18 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>[Container.Content(movies) | Container.Content(tvshows)] + System.HasAddon(script.extendedinfo)</visible>
+			</control>
+			<control type="button" id="90216">
+				<description>Add to playlist</description>
+				<width>510</width>
+				<textwidth>425</textwidth>
+				<textoffsetx>45</textoffsetx>
+				<texturefocus border="12">button_bg.png</texturefocus>
+				<texturenofocus border="12">button_bg.png</texturenofocus>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<visible>[Container.Content(movies) | Container.Content(episodes)] + System.HasAddon(script.simpleplaylists)</visible>
 			</control>
 			<control type="button" id="90211">
 				<description>FS Fanart button</description>
@@ -137,7 +146,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 			</control>
 			<control type="button" id="90212">
 				<description>Concerts in google maps addon</description>
@@ -146,7 +155,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>Container.Content(artists) + System.HasAddon(script.maps.browser)</visible>
 			</control>
 			<control type="button" id="90213">
@@ -156,7 +165,7 @@
 				<textoffsetx>45</textoffsetx>
 				<texturefocus border="12">button_bg.png</texturefocus>
 				<texturenofocus border="12">button_bg.png</texturenofocus>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 				<visible>![Control.IsVisible(90202) | Control.IsVisible(90203) | Control.IsVisible(90204) | Control.IsVisible(90205) | Control.IsVisible(90206) | Control.IsVisible(90207) | Control.IsVisible(90208) | Control.IsVisible(90209) | Control.IsVisible(90210) | Control.IsVisible(90211) | Control.IsVisible(90212)]</visible>
 			</control>
 			<control type="image" id="90214">
@@ -166,7 +175,7 @@
 				<width>510</width>
 				<height>33</height>
 				<texture flipy="true" border="12">button_border.png</texture>
-				<colordiffuse>context</colordiffuse>
+				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 			</control>
 		</control>
 		<control type="grouplist" id="90300">
@@ -181,22 +190,21 @@
 			<itemgap>0</itemgap>
 			<align>center</align>
 			<control type="button" id="90302">
-				<description>Cinema Experience button</description>
+				<description>Cinema Vision button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+				<label>$INFO[System.AddonTitle(script.cinemavision)]</label>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
-				<onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-				<label>$INFO[System.AddonTitle(script.cinema.experience)]</label>
-				<visible>System.HasAddon(script.cinema.experience)</visible>
-				<visible>Container.Content(movies) + !SubString(Window(10025).Property(CinemaExperienceRunning),True)</visible>
+     			<onclick>RunScript(script.cinemavision,experience)</onclick>
+    			<visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="button" id="90303">
 				<description>Artwork downloader button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
 				<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
@@ -207,7 +215,7 @@
 				<description>Artwork downloader button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
 				<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
@@ -218,7 +226,7 @@
 				<description>Edit button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
 				<label>21435</label>
@@ -228,7 +236,7 @@
 				<description>Rating Update button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.ratingupdate,Single=Movie)</onclick>
 				<label>31067</label>
@@ -239,7 +247,7 @@
 				<description>TvTunes button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
 				<label>$INFO[System.AddonTitle(script.tvtunes)]</label>
@@ -250,7 +258,7 @@
 				<description>VideoExtras button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick condition="!Container.Content(tvshows)">RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 				<onclick condition="Container.Content(tvshows)">RunScript(script.videoextras,display,"$INFO[ListItem.Path]")</onclick>
@@ -262,39 +270,48 @@
 				<description>Search YouTube button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(all,true)</onclick>
 				<onclick>ActivateWindow(videos,$ESCINFO[ListItem.Label,plugin://plugin.video.youtube/kodion/search/query/?q=],return)</onclick>
-				<label>$INFO[System.AddonTitle(plugin.video.youtube)]</label>
+				<label>$INFO[System.AddonTitle(plugin.video.youtube),$LOCALIZE[137] ]</label>
 				<visible>System.HasAddon(plugin.video.youtube) + [Container.Content(albums) | Container.Content(songs)]</visible>
 			</control>
 			<control type="button" id="90310">
 				<description>Add album as startup playlist button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>Skin.SetString(Startup_Playlist_Path,RunScript(script.playalbum,albumid=$INFO[ListItem.DBID]))</onclick>
 				<label>31089</label>
 				<visible>System.HasAddon(script.playalbum) + Container.Content(albums)</visible>
 			</control>
+			<control type="button" id="90316">
+				<description>Add to playlist</description>
+				<texturefocus>listselect_fo.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+				<onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
+				<label>31087</label>
+				<visible>[Container.Content(movies) | Container.Content(episodes)] + System.HasAddon(script.simpleplaylists)</visible>
+			</control>
 			<control type="button" id="90315">
 				<description>ExtendedInfo</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>	
 				<onclick>Dialog.Close(MovieInformation)</onclick>	
 				<onclick condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.DBID])</onclick>
 				<onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.DBID])</onclick>
-				<label>$INFO[System.AddonTitle(script.extendedinfo)]</label>
+				<label>31081</label>
 				<visible>[Container.Content(movies) | Container.Content(tvshows)] + System.HasAddon(script.extendedinfo)</visible>
 			</control>
 			<control type="button" id="90311">
 				<description>FS Fanart button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>SetFocus(90400)</onclick>
 				<label>$LOCALIZE[31092]</label>
 			</control>
@@ -302,7 +319,7 @@
 				<description>Concerts in google maps addon</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>RunScript(script.maps.browser,artist=$INFO[ListItem.Artist])</onclick>
 				<onclick>Dialog.Close(1119)</onclick>
 				<label>$LOCALIZE[31096]</label>
@@ -312,7 +329,7 @@
 				<description>No extra feautures button</description>
 				<texturefocus>listselect_fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<colordiffuse>listselect</colordiffuse>
+				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 				<onclick>Dialog.Close(1119)</onclick>
 				<label>$LOCALIZE[31075]</label>
 				<visible>![Control.IsVisible(90202) | Control.IsVisible(90203) | Control.IsVisible(90204) | Control.IsVisible(90205) | Control.IsVisible(90206) | Control.IsVisible(90207) | Control.IsVisible(90208) | Control.IsVisible(90209) | Control.IsVisible(90210) | Control.IsVisible(90211) | Control.IsVisible(90212)]</visible>
@@ -323,12 +340,13 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="90400">
 				<description>FS Fanart button</description>
-				<width>1920</width>
+				<width>FullScreenWidth</width>
 				<height>1080</height>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>SetFocus(90300)</onclick>
 				<label>-</label>
+				<hitrect x="0" y="0" w="0" h="0"/>
 			</control>
 			<control type="image">
 				<include>FullscreenDimensions</include>

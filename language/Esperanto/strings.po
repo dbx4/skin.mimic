@@ -20,9 +20,9 @@ msgctxt "#31005"
 msgid "Fixed"
 msgstr "Fiksita"
 
-msgctxt "#31008"
-msgid "Full screen"
-msgstr "Tutekrane"
+msgctxt "#31015"
+msgid "Settings"
+msgstr "Agordoj"
 
 msgctxt "#31019"
 msgid "Network"
@@ -32,9 +32,21 @@ msgctxt "#31076"
 msgid "Song"
 msgstr "Kanto"
 
+msgctxt "#31087"
+msgid "Add to playlist"
+msgstr "Aldoni al ludlisto"
+
+msgctxt "#31137"
+msgid "No results found"
+msgstr "Neniu rezulto trovata"
+
 msgctxt "#31390"
 msgid "Skin default"
 msgstr "Skin Default"
+
+msgctxt "#31416"
+msgid "Next"
+msgstr "Sekva"
 
 msgctxt "#31950"
 msgid "WEATHER"
@@ -59,10 +71,6 @@ msgstr "FILMOJ"
 msgctxt "#31956"
 msgid "MUSIC"
 msgstr "MUZIKO"
-
-msgctxt "#31958"
-msgid "PLAY DISC"
-msgstr "LUDI DISKON"
 
 msgctxt "#31959"
 msgid "SYSTEM"

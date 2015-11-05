@@ -15,10 +15,10 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>1920</width>
+				<width>FullScreenWidth</width>
 				<height>520</height>
 				<texture>background.png</texture>
-				<colordiffuse>background</colordiffuse>
+				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
 			<control type="textbox" id="100">
@@ -29,12 +29,7 @@
 				<height>508</height>
 				<align>center</align>
 				<font>font15_textbox</font>
-				<textcolor>grey</textcolor>
-				<onup>100</onup>
-				<ondown>100</ondown>
-				<onleft>101</onleft>
-				<onright>101</onright>
-				<pagecontrol>101</pagecontrol>...
+				<textcolor>$VAR[ColorTextVar]</textcolor>
             </control>
 			<control type="spincontrol" id="101">
 				<description>Next page button</description>
@@ -45,7 +40,7 @@
 				<onright>101</onright>
 				<ondown>101</ondown>
 				<onup>101</onup>
-				<textcolor>labelheader</textcolor>
+				<textcolor>$VAR[ColorHighlightVar]</textcolor>
 				<showonepage>true</showonepage>
 				<visible>false</visible>
 				<!--<visible>Control.IsVisible(100)</visible>-->
@@ -67,9 +62,9 @@
 						<width>1830</width>
 						<height>50</height>
 						<font>font15</font>
-						<textcolor>grey</textcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
 						<align>center</align>
-						<selectedcolor>selected</selectedcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -79,7 +74,7 @@
 						<height>50</height>
 						<font>font15</font>
 						<align>center</align>
-						<textcolor>labelheader</textcolor>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
 						<label fallback="--">$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
@@ -102,8 +97,8 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -113,8 +108,8 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -133,8 +128,8 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -145,8 +140,8 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
+						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(120)">Conditional</animation>
@@ -163,7 +158,7 @@
 				<font>font12_title</font>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>grey</textcolor>
+				<textcolor>$VAR[ColorTextVar]</textcolor>
 				<visible>false</visible>
 			</control>
 			<control type="label" id="200">

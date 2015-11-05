@@ -20,9 +20,13 @@ msgctxt "#31005"
 msgid "Fixed"
 msgstr "Mgħaġġel"
 
-msgctxt "#31008"
-msgid "Full screen"
-msgstr "Daħħal u Ara Filmati"
+msgctxt "#31009"
+msgid "Colours"
+msgstr "Kuluri"
+
+msgctxt "#31015"
+msgid "Settings"
+msgstr "Settings"
 
 msgctxt "#31019"
 msgid "Network"
@@ -32,18 +36,34 @@ msgctxt "#31076"
 msgid "Song"
 msgstr "Diska"
 
-msgctxt "#31078"
-msgid "Wall"
-msgstr "Ajkons"
-
 msgctxt "#31079"
 msgid "Shift"
 msgstr "Kbar"
+
+msgctxt "#31087"
+msgid "Add to playlist"
+msgstr "Żid mal-Playlist"
 
 msgctxt "#31093"
 msgid "Episode"
 msgstr "Episodju"
 
+msgctxt "#31137"
+msgid "No results found"
+msgstr "Ma nstabux riżultati"
+
 msgctxt "#31390"
 msgid "Skin default"
 msgstr "Qoxra Default"
+
+msgctxt "#31415"
+msgid "Now"
+msgstr "Issa"
+
+msgctxt "#31416"
+msgid "Next"
+msgstr "Li jmiss"
+
+msgctxt "#31958"
+msgid "Movie"
+msgstr "Film"
